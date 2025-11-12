@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Café y Barismo para Ti</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="cuerpo">
+  <header>
+    <h1 class="titulo">Café y Barismo para Ti</h1>
+    <nav>
+      <ul class="lista">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna consulta o sugerencia? Envíanos un mensaje y te responderemos lo antes posible.</p>
+
+    <form id="form-contacto" class="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit" class="btn-agregar">Enviar mensaje</button>
+    </form>
+
+    <div id="mensaje-enviado" class="mensaje-exito" style="display:none;">
+      ✅ ¡Gracias por tu mensaje! Te responderemos pronto.
+    </div>
+  </main>
+
+  <footer class="piePagina">
+    <p>&copy; 2025 Café y Barismo para Ti - todos los derechos reservados.</p>
+  </footer>
+    <script src="/scripts.js" defer></script>
+</body>
+</html>
